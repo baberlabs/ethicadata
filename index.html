@@ -15,24 +15,27 @@
     />
   </head>
   <body>
-    <div class="layout">
-      <!-- HEADER -->
-      <header>
-        <img
-          class="design-line"
-          src="./images/design-line.svg"
-          alt="Blue and gold line (blue on top)"
-        />
-        <img class="logo" src="./images/logo-dark.svg" alt="EthicaData logo" />
-        <nav>
-          <a href="./index.html">Home</a>
-          <a href="./principles.html">Principles</a>
-          <a href="./practice.html">Practice</a>
-          <a href="./references.html">References</a>
-          <a href="./contact.html">Contact</a>
-        </nav>
-      </header>
-
+    <!-- HEADER -->
+    <header>
+      <img
+        class="design-line"
+        src="./images/common/design-line.svg"
+        alt="Blue and gold line (blue on top)"
+      />
+      <img
+        class="logo"
+        src="./images/common/logo_dark.svg"
+        alt="EthicaData logo"
+      />
+      <nav>
+        <a href="./index.html" class="active">Home</a>
+        <a href="./principles.html">Principles</a>
+        <a href="./practice.html">Practice</a>
+        <a href="./references.html">References</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
       <!-- SECTION - HERO -->
       <section class="hero">
         <div class="hero__text">
@@ -58,7 +61,7 @@
         </div>
         <div class="hero__image">
           <img
-            src="./images/hero.png"
+            src="./images/homepage_hero/hero.png"
             alt="A man using a magnifier to look at a laptop with a database logo and 'Ethical Data Mining' written in the background with a shield icon."
           />
         </div>
@@ -69,37 +72,55 @@
         <h2 class="section__title">What We Stand For</h2>
         <div class="cards">
           <div class="card">
-            <img src="#" alt="A hand holding balance scale" />
+            <img
+              src="./images/homepage_what-we-stand-for/fairness.svg"
+              alt="A hand holding balance scale"
+            />
             <h3>Fairness</h3>
             <p>
               Algorithms should benefit everyone equally, not reinforce bias.
             </p>
           </div>
           <div class="card">
-            <img src="#" alt="A magnifier glass viewing a document" />
+            <img
+              src="./images/homepage_what-we-stand-for/transparency.svg"
+              alt="A magnifier glass viewing a document"
+            />
             <h3>Transparency</h3>
             <p>
               Users have the right to know when and how their data is analysed.
             </p>
           </div>
           <div class="card">
-            <img src="#" alt="A hand using a pen to sign a document" />
+            <img
+              src="./images/homepage_what-we-stand-for/consent.svg"
+              alt="A hand using a pen to sign a document"
+            />
             <h3>Consent</h3>
             <p>
               Data collection should always have a clear reason and permission.
             </p>
           </div>
           <div class="card">
-            <img src="#" alt="A man next to a document with a checklist" />
+            <img
+              src="./images/homepage_what-we-stand-for/accountability.svg"
+              alt="A man next to a document with a checklist"
+            />
             <h3>Accountability</h3>
             <p>Organisations must take resposbility for their models.</p>
           </div>
           <div class="card">
-            <img src="#" alt="A lock" />
+            <img
+              src="./images/homepage_what-we-stand-for/security.svg"
+              alt="A lock"
+            />
             <h3>Security</h3>
             <p>Protecting data is protecting people</p>
           </div>
         </div>
+        <a href="./principles.html" class="secondary-button"
+          >Explore the principles →</a
+        >
       </section>
 
       <!-- SECTION - UN Sustainability Development Goals We Support -->
@@ -107,25 +128,94 @@
         <h2 class="section__title">
           UN Sustainability Development Goals We Support
         </h2>
-        <div class="un-sdg-icons">
+        <div class="goals">
           <img
-            src="#"
+            src="./images/homepage_goals/sdg16.svg"
             alt="SDG 16 - Peace, Justice and Strong Institutions"
-            class="sdg-icon"
           />
-          <img src="#" alt="SDG 10 - Reduced Inequalities" class="sdg-icon" />
           <img
-            src="#"
+            src="./images/homepage_goals/sdg10.svg"
+            alt="SDG 10 - Reduced Inequalities"
+          />
+          <img
+            src="./images/homepage_goals/sdg9.svg"
             alt="SDG 9 - Industry, Innovation and Infrastructure"
-            class="sdg-icon"
           />
           <img
-            src="#"
+            src="./images/homepage_goals/sdg3.svg"
             alt="SDG 3 - Good Health and Well-Being"
-            class="sdg-icon"
           />
         </div>
+        <a href="./practice.html" class="secondary-button"
+          >See these goals applied in practice →</a
+        >
       </section>
-    </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="upper">
+        <div class="wrapper">
+          <img
+            src="./images/common/logo_light.svg"
+            alt="EthicaData logo"
+            class="logo"
+          />
+          <div class="navigation">
+            <ul class="left">
+              <li><a href="./index.html">EthicaData</a></li>
+              <li>
+                <a href="./index.html#what-we-stand-for">What We Stand For</a>
+              </li>
+              <li>
+                <a href="./index.html#un-sdgs-we-support">UN SDGs We Support</a>
+              </li>
+            </ul>
+            <ul class="right">
+              <li><a href="./principles.html">Principles</a></li>
+              <li><a href="./practice.html">Practice</a></li>
+              <li><a href="./references.html">References</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="sdgs">
+            <img
+              src="./images/homepage_goals/sdg16.svg"
+              alt="SDG 16 - Peace, Justice and Strong Institutions"
+            />
+            <img
+              src="./images/homepage_goals/sdg10.svg"
+              alt="SDG 10 - Reduced Inequalities"
+            />
+            <img
+              src="./images/homepage_goals/sdg9.svg"
+              alt="SDG 9 - Industry, Innovation and Infrastructure"
+            />
+            <img
+              src="./images/homepage_goals/sdg3.svg"
+              alt="SDG 3 - Good Health and Well-Being"
+            />
+          </div>
+          <div class="contacts">
+            <p class="address">
+              <span>Millennium Point</span>
+              <span>Birmingham City University</span>
+              <span>Curzon Street</span>
+              <span>Birmingham B4 7AP</span>
+            </p>
+            <div class="other">
+              <a href="tel:+447438234827" class="phone">(+44) 7438 234827</a>
+              <a href="mailto:baber.khan@bcu.ac.uk" class="email">
+                baber.khan@bcu.ac.uk</a
+              >
+              <p class="student-id">Student ID No. 17125325</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower">
+        <p>Copyright © 2025 EthicaData. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
