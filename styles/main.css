@@ -241,3 +241,85 @@ section {
 .what-we-stand-for .card img {
   width: 3rem;
 }
+
+/* SECTION - US SDGs We Support */
+
+.un-sdgs-we-support {
+  gap: 3.5rem;
+}
+
+.un-sdgs-we-support .goals {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.un-sdgs-we-support .goals img {
+  width: calc(50% - 0.5rem);
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-white);
+  font-size: 0.8rem;
+}
+
+footer .upper {
+  background-color: var(--color-blue);
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+footer a,
+footer span,
+footer p {
+  color: var(--color-white);
+  font-size: 0.9rem;
+}
+
+footer .logo {
+  width: 8rem;
+}
+
+footer .sdgs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+footer .sdgs img {
+  width: 5.5rem;
+}
+
+footer .navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  gap: 1rem;
+}
+
+footer .address,
+footer .other {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .page_nav {
+  font-weight: bold;
+}
+
+footer .lower {
+  background-color: var(--color-charcoal);
+  padding: 2rem;
+  text-align: center;
+}
