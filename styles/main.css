@@ -33,6 +33,7 @@ body {
   max-width: var(--mobile-width);
   margin: 0 auto;
   background-color: var(--color-white);
+  gap: 5rem;
 }
 
 /* HEADER */
@@ -262,7 +263,6 @@ section {
 /* FOOTER */
 
 footer {
-  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   color: var(--color-white);
@@ -322,4 +322,107 @@ footer .lower {
   background-color: var(--color-charcoal);
   padding: 2rem;
   text-align: center;
+}
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+  :root {
+    --mobile-width: 720px;
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  header .design-line-mb {
+    width: 20rem;
+  }
+
+  header .logo {
+    width: 7rem;
+  }
+
+  section {
+    padding: 0 2rem;
+  }
+
+  .hero img {
+    width: 30rem;
+    margin: auto;
+  }
+
+  .un-sdgs-we-support .goals img {
+    width: 10rem;
+  }
+
+  footer .upper {
+    padding: 3rem 3rem;
+    gap: 3rem;
+  }
+
+  footer .sdgs img {
+    width: 6rem;
+  }
+
+  footer .navigation {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --mobile-width: 1000px;
+  }
+
+  header .design-line-mb {
+    display: none;
+  }
+
+  header .design-line-dt {
+    display: block;
+    width: 25rem;
+  }
+
+  header .logo {
+    width: 8rem;
+  }
+
+  header .nav-container-mb {
+    display: none;
+  }
+
+  .nav-container-dt {
+    display: flex;
+  }
+
+  nav a {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: var(--color-charcoal);
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  nav a:active {
+    font-weight: 600;
+  }
+
+  nav .active {
+    font-weight: 900;
+  }
+
+  footer .upper {
+    gap: 2rem;
+  }
+
+  footer .navigation {
+    gap: 1rem;
+  }
+
+  footer .sdgs img {
+    width: 4rem;
+  }
 }
