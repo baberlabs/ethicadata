@@ -13,12 +13,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Scripts -->
+    <script src="./scripts/main.js" defer></script>
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <!-- HEADER -->
     <header>
       <img
-        class="design-line"
+        class="design-line-dt"
         src="./images/common/design-line.svg"
         alt="Blue and gold line (blue on top)"
       />
@@ -27,17 +31,261 @@
         src="./images/common/logo_dark.svg"
         alt="EthicaData logo"
       />
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./principles.html">Principles</a>
-        <a href="./practice.html">Practice</a>
-        <a href="./references.html" class="active">References</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
+      <img
+        class="design-line-mb"
+        src="./images/common/design-line.svg"
+        alt="Blue and gold line (blue on top)"
+      />
+      <div class="nav-container-mb">
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./principles.html">Principles</a>
+          <a href="./practice.html">Practice</a>
+          <a href="./references.html" class="active">References</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="nav-container-dt">
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./principles.html">Principles</a>
+          <a href="./practice.html">Practice</a>
+          <a href="./references.html" class="active">References</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <h2>References</h2>
+    <main id="main">
+      <section id="references" class="section_no-homepage">
+        <h1>References</h1>
+        <h2>Doing the right thing with data</h2>
+        <p class="reference-description">
+          Ethical data is not about slowing innovation. It is about designing
+          technology that people can trust. Each principle below connects
+          everyday data practice to one or more UN Sustainable Development Goals
+          (SDGs).
+        </p>
+
+        <ul class="references-list">
+          <li class="reference">
+            <h3>Getting goals...</h3>
+            <p>
+              <span class="author">United Nations</span>
+              <span class="year">(2025)</span>
+              <span class="title">The 17 Goals | Sustainable Development.</span>
+              <span class="link"
+                >Available at:
+                <a href="https://sdgs.un.org/goals"
+                  >https://sdgs.un.org/goals</a
+                ></span
+              >
+              <span class="date">[Accessed 30 September 2025]</span>
+            </p>
+          </li>
+
+          <li class="reference">
+            <h3>Topic introduction...</h3>
+            <p>
+              <span class="author">Holdsworth, J.</span>
+              <span class="year">(no date)</span>
+              <span class="title">What is data mining?</span>
+              <span class="link"
+                >Available at:
+                <a href="https://www.ibm.com/think/topics/data-mining"
+                  >https://www.ibm.com/think/topics/data-mining</a
+                ></span
+              >
+              <span class="date">[Accessed 10 October 2025]</span>
+            </p>
+          </li>
+
+          <li class="reference">
+            <h3>About ethics in regards to data...</h3>
+            <p>
+              <span class="author">Association for Computing Machinery</span>
+              <span class="year">(2018)</span>
+              <span class="title"
+                >ACM Code of Ethics and Professional Conduct.</span
+              >
+              <span class="link"
+                >Available at:
+                <a href="https://ethics.acm.org/code-of-ethics/"
+                  >https://ethics.acm.org/code-of-ethics/</a
+                ></span
+              >
+              <span class="date">[Accessed 10 October 2025]</span>
+            </p>
+          </li>
+
+          <li class="reference">
+            <h3>About ethics in regards to data...</h3>
+            <p>
+              <span class="author">European Union</span>
+              <span class="year">(2016)</span>
+              <span class="title"
+                >Regulation (EU) 2016/679 (General Data Protection
+                Regulation).</span
+              >
+              <span class="link"
+                >Available at:
+                <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+                  >https://eur-lex.europa.eu/eli/reg/2016/679/oj</a
+                ></span
+              >
+              <span class="date">[Accessed 20 October 2025]</span>
+            </p>
+          </li>
+
+          <li class="reference">
+            <h3>About ethics in regards to data...</h3>
+            <p>
+              <span class="author"
+                >Government Digital Service and Central Digital & Data
+                Office</span
+              >
+              <span class="year">(2016)</span>
+              <span class="title">Data Ethics Framework.</span>
+              <span class="link"
+                >Available at:
+                <a
+                  href="https://www.gov.uk/government/publications/data-ethics-framework/data-ethics-framework-2020"
+                >
+                  https://www.gov.uk/government/publications/data-ethics-framework/data-ethics-framework-2020
+                </a>
+              </span>
+              <span class="date">[Accessed 5 October 2025]</span>
+            </p>
+          </li>
+
+          <li class="reference">
+            <h3>Statistics...</h3>
+            <p>
+              <span class="author">NHS England</span>
+              <span class="year">(2023)</span>
+              <span class="title"
+                >OpenSafely: Secure analytics platform for NHS electronic health
+                records.</span
+              >
+              <span class="link"
+                >Available at:
+                <a href="https://www.opensafely.org/"
+                  >https://www.opensafely.org/</a
+                ></span
+              >
+              <span class="date">[Accessed 15 October 2025]</span>
+            </p>
+          </li>
+
+          <li class="reference">
+            <h3>Statistics...</h3>
+            <p>
+              <span class="author">Tesco PLC</span>
+              <span class="year">(2024)</span>
+              <span class="title">Data and Responsibility Report 2024.</span>
+              <span class="link"
+                >Available at:
+                <a href="https://www.tescoplc.com/sustainability"
+                  >https://www.tescoplc.com/sustainability</a
+                ></span
+              >
+              <span class="date">[Accessed 15 October 2025]</span>
+            </p>
+          </li>
+
+          <li class="reference">
+            <h3>Statistics...</h3>
+            <p>
+              <span class="author">Kelsey, S.</span>
+              <span class="year">(2025)</span>
+              <span class="title">Annual Report and Financial Statements.</span>
+              <span class="link"
+                >Available at:
+                <a
+                  href="https://monzo.com/blog/build-a-reactive-fraud-prevention-platform"
+                >
+                  https://monzo.com/blog/build-a-reactive-fraud-prevention-platform
+                </a>
+              </span>
+              <span class="date">[Accessed 15 October 2025]</span>
+            </p>
+          </li>
+
+          <li class="reference">
+            <h3>Statistics...</h3>
+            <p>
+              <span class="author">Transport for London</span>
+              <span class="year">(2023)</span>
+              <span class="title">Open Data Users.</span>
+              <span class="link"
+                >Available at:
+                <a href="https://tfl.gov.uk/info-for/open-data-users/"
+                  >https://tfl.gov.uk/info-for/open-data-users/</a
+                ></span
+              >
+              <span class="date">[Accessed 15 October 2025]</span>
+            </p>
+          </li>
+
+          <li class="reference">
+            <h3>Getting SDG icons...</h3>
+            <p>
+              <span class="author">United Nations</span>
+              <span class="year">(2025)</span>
+              <span class="title"
+                >Communication materials - United Nations Sustainable
+                Development.</span
+              >
+              <span class="link"
+                >Available at:
+                <a
+                  href="https://www.un.org/sustainabledevelopment/news/communications-material/"
+                >
+                  https://www.un.org/sustainabledevelopment/news/communications-material/
+                </a>
+              </span>
+              <span class="date">[Accessed 27 October 2025]</span>
+            </p>
+          </li>
+
+          <li class="reference">
+            <h3>Getting icons...</h3>
+            <p>
+              <span class="author">Flaticon</span>
+              <span class="year">(2025)</span>
+              <span class="title"
+                >Vector Icons and Stickers - PNG, SVG, EPS, PSD, and CSS.</span
+              >
+              <span class="link"
+                >Available at:
+                <a href="https://www.flaticon.com/"
+                  >https://www.flaticon.com/</a
+                ></span
+              >
+              <span class="date">[Accessed 27 October 2025]</span>
+            </p>
+          </li>
+
+          <li class="reference">
+            <h3>Getting hero image...</h3>
+            <p>
+              <span class="author">OpenAI</span>
+              <span class="year">(2025)</span>
+              <span class="title"
+                >ChatGPT. Response prompted by Baber Khan, 28 October 2025, 9:27
+                am.</span
+              >
+              <span class="link"></span>
+              <span class="date"></span>
+            </p>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <!-- FOOTER -->
@@ -49,23 +297,6 @@
             alt="EthicaData logo"
             class="logo"
           />
-          <div class="navigation">
-            <ul class="left">
-              <li><a href="./index.html">EthicaData</a></li>
-              <li>
-                <a href="./index.html#what-we-stand-for">What We Stand For</a>
-              </li>
-              <li>
-                <a href="./index.html#un-sdgs-we-support">UN SDGs We Support</a>
-              </li>
-            </ul>
-            <ul class="right">
-              <li><a href="./principles.html">Principles</a></li>
-              <li><a href="./practice.html">Practice</a></li>
-              <li><a href="./references.html">References</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-            </ul>
-          </div>
           <div class="sdgs">
             <img
               src="./images/homepage_goals/sdg16.svg"
@@ -84,6 +315,28 @@
               alt="SDG 3 - Good Health and Well-Being"
             />
           </div>
+          <div class="navigation">
+            <ul class="left">
+              <li><a href="./index.html" class="page_nav">EthicaData</a></li>
+              <li>
+                <a href="./index.html#what-we-stand-for">What We Stand For</a>
+              </li>
+              <li>
+                <a href="./index.html#un-sdgs-we-support">UN SDGs We Support</a>
+              </li>
+            </ul>
+            <ul class="right">
+              <li>
+                <a href="./principles.html" class="page_nav">Principles</a>
+              </li>
+              <li><a href="./practice.html" class="page_nav">Practice</a></li>
+              <li>
+                <a href="./references.html" class="page_nav">References</a>
+              </li>
+              <li><a href="./contact.html" class="page_nav">Contact</a></li>
+            </ul>
+          </div>
+
           <div class="contacts">
             <p class="address">
               <span>Millennium Point</span>

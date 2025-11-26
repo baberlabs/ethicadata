@@ -13,12 +13,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Scripts -->
+    <script src="./scripts/main.js" defer></script>
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <!-- HEADER -->
     <header>
       <img
-        class="design-line"
+        class="design-line-dt"
         src="./images/common/design-line.svg"
         alt="Blue and gold line (blue on top)"
       />
@@ -27,17 +31,197 @@
         src="./images/common/logo_dark.svg"
         alt="EthicaData logo"
       />
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./principles.html" class="active">Principles</a>
-        <a href="./practice.html">Practice</a>
-        <a href="./references.html">References</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
+      <img
+        class="design-line-mb"
+        src="./images/common/design-line.svg"
+        alt="Blue and gold line (blue on top)"
+      />
+      <div class="nav-container-mb">
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./principles.html" class="active">Principles</a>
+          <a href="./practice.html">Practice</a>
+          <a href="./references.html">References</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="nav-container-dt">
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./principles.html" class="active">Principles</a>
+          <a href="./practice.html">Practice</a>
+          <a href="./references.html">References</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <h2>Principles</h2>
+    <main id="main">
+      <section id="principles" class="section_no-homepage">
+        <h1>Principles</h1>
+        <h2>Doing the right thing with data</h2>
+        <p class="principle-description">
+          Ethical data is not about slowing innovation. It is about designing
+          technology that people can trust. Each principle below connects
+          everyday data practice to one or more UN Sustainable Development Goals
+          (SDGs).
+        </p>
+        <div class="search-bar">
+          <input type="text" placeholder="Search principles by SDG..." />
+          <button class="search-button" aria-label="Search principles by SDG">
+            <img
+              src="./images/principles/magnifier-glass.svg"
+              alt="Magnifier glass identifying search function"
+            />
+          </button>
+        </div>
+
+        <ul class="principles-list">
+          <li class="principle">
+            <h3>
+              <span class="principle-serial">1</span
+              ><span class="principle-title"
+                >Contribute to society and human well-being</span
+              >
+            </h3>
+            <p>
+              Data projects should serve the public good, not only business
+              goals. Mining techniques must improve lives, respect human rights,
+              and avoid reinforcing disadvantage.
+            </p>
+            <div class="sdg-labels">
+              <span>SDG 3</span><span>SDG 10</span><span>SDG 16</span>
+            </div>
+          </li>
+          <li class="principle">
+            <h3>
+              <span class="principle-serial">2</span
+              ><span class="principle-title">Avoid harm</span>
+            </h3>
+            <p>
+              Before collecting or analysing data, assess possible harms,
+              especially privacy loss, bias, or reputational damage, and design
+              safeguards to prevent them.
+            </p>
+            <div class="sdg-labels"><span>SDG 3</span><span>SDG 16</span></div>
+          </li>
+          <li class="principle">
+            <h3>
+              <span class="principle-serial">3</span
+              ><span class="principle-title">Be honest and trustworthy</span>
+            </h3>
+            <p>
+              Be transparent about data sources, model limits, and potential
+              errors. Never falsify, exaggerate, or conceal results.
+            </p>
+            <div class="sdg-labels">
+              <span>SDG `6</span>
+            </div>
+          </li>
+          <li class="principle">
+            <h3>
+              <span class="principle-serial">4</span
+              ><span class="principle-title"
+                >Be fair and do not discriminate</span
+              >
+            </h3>
+            <p>
+              Detect and correct bias in datasets and algorithms. Ensure models
+              work fairly across age, gender, race, and background.
+            </p>
+            <div class="sdg-labels">
+              <span>SDG 10</span>
+            </div>
+          </li>
+          <li class="principle">
+            <h3>
+              <span class="principle-serial">5</span
+              ><span class="principle-title"
+                >Respect creative work and intellectual property</span
+              >
+            </h3>
+            <p>
+              When re-using datasets, algorithms, or research, credit the
+              creators and follow licenses.
+            </p>
+            <div class="sdg-labels">
+              <span>SDG 9</span>
+            </div>
+          </li>
+          <li class="principle">
+            <h3>
+              <span class="principle-serial">6</span
+              ><span class="principle-title">Respect privacy</span>
+            </h3>
+            <p>
+              Collect only the minimum data needed, store it securely, and
+              explain how it will be used. Allow people to view, correct, or
+              delete their information.
+            </p>
+            <div class="sdg-labels"><span>SDG 3</span><span>SDG 16</span></div>
+          </li>
+          <li class="principle">
+            <h3>
+              <span class="principle-serial">7</span
+              ><span class="principle-title">Honour confidentiality</span>
+            </h3>
+            <p>
+              If you hold sensitive or propriety data, protect it unless
+              disclosure is legally or ethically required to prevent harm.
+            </p>
+            <div class="sdg-labels">
+              <span>SDG 16</span>
+            </div>
+          </li>
+          <li class="principle">
+            <h3>
+              <span class="principle-serial">8</span
+              ><span class="principle-title"
+                >Evaluate systems for quality and risk</span
+              >
+            </h3>
+            <p>
+              Audit data-mining systems for accuracy, reliability, and
+              unintended side-effects. Report major risks and correct them
+              promptly.
+            </p>
+            <div class="sdg-labels">
+              <span>SDG 9</span>
+            </div>
+          </li>
+          <li class="principle">
+            <h3>
+              <span class="principle-serial">9</span
+              ><span class="principle-title"
+                >Design for security and robustness</span
+              >
+            </h3>
+            <p>
+              Strong security is part of ethics. Protect data against misuse and
+              update defences as threats evolve.
+            </p>
+            <div class="sdg-labels">
+              <span>SDG 9</span>
+            </div>
+          </li>
+        </ul>
+
+        <p>
+          Ethical data mining follows one simple rule:
+          <strong>the public good comes first</strong>. By following these
+          principles, we connect technology with trust, responsibility, and the
+          UN goals for a fair and sustainable digital future.
+        </p>
+
+        <a class="button cta-button" href="./contact.html"
+          >Contact us now for a free assessment →</a
+        >
+      </section>
     </main>
 
     <!-- FOOTER -->
@@ -49,23 +233,6 @@
             alt="EthicaData logo"
             class="logo"
           />
-          <div class="navigation">
-            <ul class="left">
-              <li><a href="./index.html">EthicaData</a></li>
-              <li>
-                <a href="./index.html#what-we-stand-for">What We Stand For</a>
-              </li>
-              <li>
-                <a href="./index.html#un-sdgs-we-support">UN SDGs We Support</a>
-              </li>
-            </ul>
-            <ul class="right">
-              <li><a href="./principles.html">Principles</a></li>
-              <li><a href="./practice.html">Practice</a></li>
-              <li><a href="./references.html">References</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-            </ul>
-          </div>
           <div class="sdgs">
             <img
               src="./images/homepage_goals/sdg16.svg"
@@ -84,6 +251,28 @@
               alt="SDG 3 - Good Health and Well-Being"
             />
           </div>
+          <div class="navigation">
+            <ul class="left">
+              <li><a href="./index.html" class="page_nav">EthicaData</a></li>
+              <li>
+                <a href="./index.html#what-we-stand-for">What We Stand For</a>
+              </li>
+              <li>
+                <a href="./index.html#un-sdgs-we-support">UN SDGs We Support</a>
+              </li>
+            </ul>
+            <ul class="right">
+              <li>
+                <a href="./principles.html" class="page_nav">Principles</a>
+              </li>
+              <li><a href="./practice.html" class="page_nav">Practice</a></li>
+              <li>
+                <a href="./references.html" class="page_nav">References</a>
+              </li>
+              <li><a href="./contact.html" class="page_nav">Contact</a></li>
+            </ul>
+          </div>
+
           <div class="contacts">
             <p class="address">
               <span>Millennium Point</span>
