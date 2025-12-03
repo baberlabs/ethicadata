@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EthicaData - Responsible intelligence for a fairer world</title>
+    <title>
+      Practice | EthicaData - Responsible intelligence for a fairer world
+    </title>
     <link rel="stylesheet" type="text/css" href="./styles/main.css" />
 
     <!-- Poppins and Inter font -->
@@ -13,12 +15,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Scripts -->
+    <script src="./scripts/main.js" defer></script>
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <!-- HEADER -->
     <header>
       <img
-        class="design-line"
+        class="design-line-dt"
         src="./images/common/design-line.svg"
         alt="Blue and gold line (blue on top)"
       />
@@ -27,17 +33,128 @@
         src="./images/common/logo_dark.svg"
         alt="EthicaData logo"
       />
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./principles.html">Principles</a>
-        <a href="./practice.html" class="active">Practice</a>
-        <a href="./references.html">References</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
+      <img
+        class="design-line-mb"
+        src="./images/common/design-line.svg"
+        alt="Blue and gold line (blue on top)"
+      />
+      <div class="nav-container-mb">
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./principles.html">Principles</a>
+          <a href="./practice.html" class="active">Practice</a>
+          <a href="./references.html">References</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="nav-container-dt">
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./principles.html">Principles</a>
+          <a href="./practice.html" class="active">Practice</a>
+          <a href="./references.html">References</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <h2>Practice</h2>
+    <main id="main">
+      <section id="practice" class="section_no-homepage">
+        <h1>Practice</h1>
+        <h2>See how major industries use data mining ethically</h2>
+        <p class="practice-description">
+          Data mining becomes ethical when organisatons balance insight with
+          responsibility. These real examples show how different industries
+          apply principles of fairness, privacy, and accountability in their
+          everyday data work.
+        </p>
+        <button class="prev-button">Prev</button>
+        <button class="next-button">Next</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Sector</th>
+              <th>Example</th>
+              <th>Ethical Controls in Place</th>
+              <th>Linked SDGs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="current" id="practice-row-1">
+              <td>Healthcare</td>
+              <td>
+                <strong>NHS OpenSafely:</strong> a secure research platform
+                analysing anonymised GP data to study helath trends and improve
+                treatment.
+              </td>
+              <td>
+                Data anonymisation, patient consent, strict access controls, and
+                transparency reports.
+              </td>
+              <td>
+                <strong>SDG3</strong> (Good Health & Well-Being);
+                <strong>SDG 16 (Strong Institutions)</strong>
+              </td>
+            </tr>
+            <tr id="practice-row-2">
+              <td>Retail</td>
+              <td>
+                <strong>Tesco Clubcard Analytics:</strong> customer purchase
+                data used to forecast demand and reduce food waste.
+              </td>
+              <td>
+                Data minimisation, informed consent, ethical analytics, and
+                sustainable reporting.
+              </td>
+              <td>
+                <strong>SDG 12</strong> (Responsible Consumption);
+                <strong>SDG 9</strong> (Industry & Infrastructure)
+              </td>
+            </tr>
+            <tr id="practice-row-3">
+              <td>Finance</td>
+              <td>
+                <strong>Monzo Bank Fraud Detection:</strong> machine learning
+                models spotting unusual transactions while protecting user
+                privacy.
+              </td>
+              <td>
+                Bias testing, regular audits, fairness monitoring, and clear
+                customer expectations.
+              </td>
+              <td>
+                <strong>SDG 10</strong> (Reduced Inequalities);
+                <strong>SDG 16</strong> (Peace & Justice)
+              </td>
+            </tr>
+            <tr id="practice-row-4">
+              <td>Transport</td>
+              <td>
+                <strong>Transport for London Open Data:</strong> anonymised
+                travel data shared with developers to improve journey planning
+                and reduce congestion.
+              </td>
+              <td>
+                Aggregation, public benefit focus, open-source collaboration,
+                and privacy preservation.
+              </td>
+              <td>
+                <strong>SDG 11</strong> (Sustainable Cities);
+                <strong>SDG 9</strong> (Innovation & Infrastructure)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <a class="button cta-button" href="./contact.html"
+          >Contact us now for a free assessment →</a
+        >
+      </section>
     </main>
 
     <!-- FOOTER -->
@@ -49,23 +166,6 @@
             alt="EthicaData logo"
             class="logo"
           />
-          <div class="navigation">
-            <ul class="left">
-              <li><a href="./index.html">EthicaData</a></li>
-              <li>
-                <a href="./index.html#what-we-stand-for">What We Stand For</a>
-              </li>
-              <li>
-                <a href="./index.html#un-sdgs-we-support">UN SDGs We Support</a>
-              </li>
-            </ul>
-            <ul class="right">
-              <li><a href="./principles.html">Principles</a></li>
-              <li><a href="./practice.html">Practice</a></li>
-              <li><a href="./references.html">References</a></li>
-              <li><a href="./contact.html">Contact</a></li>
-            </ul>
-          </div>
           <div class="sdgs">
             <img
               src="./images/homepage_goals/sdg16.svg"
@@ -84,6 +184,28 @@
               alt="SDG 3 - Good Health and Well-Being"
             />
           </div>
+          <div class="navigation">
+            <ul class="left">
+              <li><a href="./index.html" class="page_nav">EthicaData</a></li>
+              <li>
+                <a href="./index.html#what-we-stand-for">What We Stand For</a>
+              </li>
+              <li>
+                <a href="./index.html#un-sdgs-we-support">UN SDGs We Support</a>
+              </li>
+            </ul>
+            <ul class="right">
+              <li>
+                <a href="./principles.html" class="page_nav">Principles</a>
+              </li>
+              <li><a href="./practice.html" class="page_nav">Practice</a></li>
+              <li>
+                <a href="./references.html" class="page_nav">References</a>
+              </li>
+              <li><a href="./contact.html" class="page_nav">Contact</a></li>
+            </ul>
+          </div>
+
           <div class="contacts">
             <p class="address">
               <span>Millennium Point</span>

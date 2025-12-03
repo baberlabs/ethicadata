@@ -381,6 +381,72 @@ section {
   font-weight: 700;
 }
 
+/* PRACTICE */
+
+#practice table {
+  width: 100%;
+  border-collapse: collapse;
+  display: flex;
+  border: 1px solid var(--color-black50);
+}
+
+#practice table thead tr {
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 19rem;
+}
+
+#practice table tbody {
+  display: flex;
+  flex-direction: row;
+}
+
+#practice table tbody tr {
+  display: none;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 19rem;
+}
+
+#practice table tbody tr.current {
+  display: grid;
+}
+
+#practice table th,
+#practice table td {
+  padding: 0.8rem 1.5rem;
+  border-top: 1px solid var(--color-charcoal);
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+#practice table strong {
+  font-size: 0.8rem;
+}
+
+#practice table thead tr th:nth-child(1),
+#practice table tbody tr td:nth-child(1) {
+  height: fit-content;
+}
+
+#practice table thead tr th:nth-child(2),
+#practice table tbody tr td:nth-child(2) {
+  height: 6.7rem;
+}
+
+#practice table thead tr th:nth-child(3),
+#practice table tbody tr td:nth-child(3) {
+  height: 5.2rem;
+}
+
+#practice table thead tr th:nth-child(4),
+#practice table tbody tr td:nth-child(4) {
+  height: 4rem;
+}
+
 /* REFERENCES */
 
 #references .references-list {
@@ -405,6 +471,67 @@ section {
 
 #references .title {
   font-style: italic;
+}
+
+/* CONTACT */
+
+#contact .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 30rem;
+}
+
+#contact form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#contact input,
+#contact textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-black50);
+}
+
+#contact button {
+  border: none;
+  margin-top: 0.5rem;
+}
+
+#contact .other-contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#contact .other-contact-methods h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#contact .other-contact-methods > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#contact .other-contact-methods .method {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 1rem;
+}
+
+#contact .other-contact-methods img {
+  width: 1.5rem;
 }
 
 /* FOOTER */
@@ -516,6 +643,11 @@ footer .lower {
   #references .references-list {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+  }
+
+  #contact .contact-info {
+    flex-direction: row;
+    gap: 8rem;
   }
 
   footer .upper .wrapper {
