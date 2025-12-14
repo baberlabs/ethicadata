@@ -1,2 +1,56 @@
 @layer layout {
+  .site-header {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    max-inline-size: var(--w-page-max);
+    margin-inline: auto;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+
+    .brand {
+      order: 1;
+    }
+
+    .design-line-wrapper {
+      order: 2;
+      flex: 1;
+    }
+
+    .menu {
+      order: 3;
+    }
+  }
+
+  @media (min-width: 760px) {
+    .site-header {
+      padding-inline: 3rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .site-header {
+      gap: 2rem;
+
+      .brand {
+        order: 2;
+      }
+
+      .design-line-wrapper {
+        order: 1;
+      }
+
+      .menu {
+        order: 3;
+        flex: 1;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .site-header {
+      gap: 5rem;
+    }
+  }
 }
