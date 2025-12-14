@@ -1,0 +1,25 @@
+@layer tokens {
+  :root {
+    --w-page-max: 1440px;
+
+    --f-heading: "Poppins", "Inter", Arial, Helvetica, system-ui, sans-serif;
+    --f-text: "Inter", Arial, Helvetica, system-ui, sans-serif;
+
+    --fw-normal: 300;
+    --fw-semibold: 600;
+    --fw-black: 900;
+
+    --logo-sm: 6rem;
+    --logo-lg: 10rem;
+
+    --c-black: #111111;
+    --c-white: #eeeeee;
+    --c-blue: #1e3a8a;
+    --c-gold: #fbbf24;
+
+    --c-text: var(--c-black);
+    --c-background: var(--c-white);
+    --c-primary: var(--c-blue);
+    --c-accent: var(--c-gold);
+  }
+}

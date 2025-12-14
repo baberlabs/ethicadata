@@ -1,0 +1,17 @@
+@layer resets {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  button {
+    padding: 0;
+  }
+}
