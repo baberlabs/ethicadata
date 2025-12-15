@@ -1,12 +1,10 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    /* font-size: 14px; */
   }
 
   body {
-    margin: 0;
-    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-family: var(--f-text);
     font-weight: var(--fw-normal);
     color: var(--c-text);
     background-color: var(--c-background);
@@ -16,6 +14,10 @@
   h2,
   h3 {
     font-family: var(--f-heading);
+  }
+
+  h1 {
+    color: var(--c-primary);
   }
 
   a {
@@ -28,5 +30,22 @@
     text-decoration: underline;
     text-underline-offset: 0.15rem;
     text-decoration-thickness: 0.15rem;
+  }
+
+  footer a {
+    text-decoration: underline;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    outline: 0;
   }
 }

@@ -29,47 +29,129 @@
 
   <body>
     <header class="site-header">
-      <a href="./" class="brand" aria-label="EthicaData homepage">
-        <img
-          class="logo"
-          src="./images/common/logo_dark.svg"
-          alt="EthicaData logo"
-        />
-      </a>
+      <div class="header-content">
+        <a href="./index.html" class="brand" aria-label="EthicaData homepage">
+          <img
+            class="logo"
+            src="./images/common/logo_dark.svg"
+            alt="EthicaData logo"
+          />
+        </a>
 
-      <div class="design-line-wrapper" aria-hidden="true">
-        <!-- Alt is intentionally empty for this image as per W3 guidelines -->
-        <img class="design-line" src="./images/common/design-line.svg" alt="" />
-      </div>
+        <div class="design-line-wrapper" aria-hidden="true">
+          <!-- Alt is intentionally empty for this image as per W3 guidelines -->
+          <img
+            class="design-line"
+            src="./images/common/design-line.svg"
+            alt=""
+          />
+        </div>
 
-      <div class="menu">
-        <button
-          class="menu-button"
-          type="button"
-          aria-expanded="false"
-          aria-controls="primary-nav"
-          aria-label="Toggle navigation"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </button>
+        <div class="menu">
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Toggle navigation"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
 
-        <nav
-          id="primary-nav"
-          class="nav"
-          aria-label="Primary navigation"
-          hidden
-        >
-          <ul>
-            <li><a href="./">Home</a></li>
-            <li><a href="./principles.html">Principles</a></li>
-            <li><a href="./practice.html">Practice</a></li>
-            <li><a href="./references.html">References</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
+          <nav
+            id="primary-nav"
+            class="nav"
+            aria-label="Primary navigation"
+            hidden
+          >
+            <ul>
+              <li><a href="./index.html" aria-current="page">Home</a></li>
+              <li><a href="./principles.html">Principles</a></li>
+              <li><a href="./practice.html">Practice</a></li>
+              <li><a href="./references.html">References</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
+
+    <main class="main-content"></main>
+
+    <footer class="site-footer">
+      <!-- Main footer content -->
+      <div class="footer-content-container">
+        <div class="footer-content">
+          <!-- Logo -->
+          <a href="./index.html" class="brand" aria-label="EthicaData homepage">
+            <img
+              class="logo"
+              src="./images/common/logo_light.svg"
+              alt="EthicaData logo"
+            />
+          </a>
+
+          <!-- UN SDGs -->
+          <figure class="un-sdgs">
+            <figcaption class="sr-only">
+              United Nations Sustainable Development Goals supported
+            </figcaption>
+            <img
+              src="./images/home/sdg16.svg"
+              alt="SDG 16 - Peace, Justice and Strong Institutions"
+            />
+            <img
+              src="./images/home/sdg10.svg"
+              alt="SDG 10 - Reduced Inequalities"
+            />
+            <img
+              src="./images/home/sdg9.svg"
+              alt="SDG 9 - Industry, Innovation and Infrastructure"
+            />
+            <img
+              src="./images/home/sdg3.svg"
+              alt="SDG 3 - Good Health and Well-Being"
+            />
+          </figure>
+
+          <!-- Footer Navigation -->
+          <nav id="footer-nav" class="nav" aria-label="Footer navigation">
+            <h2 class="nav-heading">Explore</h2>
+            <ul>
+              <li><a href="./index.html" aria-current="page">Home</a></li>
+              <li><a href="./principles.html">Principles</a></li>
+              <li><a href="./practice.html">Practice</a></li>
+              <li><a href="./references.html">References</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contact Details -->
+          <section class="contact-details" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <address>
+              <span>Millennium Point</span><br />
+              <span>Birmingham City University</span><br />
+              <span>Curzon Street</span><br />
+              <span>Birmingham B4 7AP</span><br />
+            </address>
+            <div>
+              <a href="tel:+447438234827">(+44) 7438 234 827</a>
+              <a href="mailto:baber.khan@mail.bcu.ac.uk">
+                baber.khan@mail.bcu.ac.uk
+              </a>
+              <p class="student-id">Student ID No. 17125325</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <p class="copyright">
+        Copyright &copy; 2025, EthicaData. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>

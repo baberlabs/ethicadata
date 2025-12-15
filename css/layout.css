@@ -1,56 +1,145 @@
 @layer layout {
   .site-header {
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
 
-    max-inline-size: var(--w-page-max);
-    margin-inline: auto;
-    padding-inline: 1rem;
-    padding-block: 1rem;
+      max-inline-size: var(--w-page-max);
+      margin-inline: auto;
 
-    .brand {
-      order: 1;
+      .brand {
+        order: 1;
+      }
+
+      .design-line-wrapper {
+        order: 2;
+        flex: 1;
+      }
+
+      .menu {
+        order: 3;
+      }
+    }
+  }
+
+  .site-footer {
+    .footer-content-container {
+      .footer-content {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "brand brand" "sdgs sdgs" "nav contacts";
+        column-gap: 2rem;
+        row-gap: 2.5rem;
+
+        .brand {
+          grid-area: brand;
+        }
+
+        .un-sdgs {
+          grid-area: sdgs;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          column-gap: 0.5rem;
+          align-items: center;
+        }
+
+        .nav {
+          grid-area: nav;
+          display: flex;
+          flex-direction: column;
+          row-gap: 0.5rem;
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+          }
+        }
+
+        .contact-details {
+          grid-area: contacts;
+          display: flex;
+          flex-direction: column;
+          row-gap: 0.5rem;
+
+          > div {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
     }
 
-    .design-line-wrapper {
-      order: 2;
-      flex: 1;
+    .copyright {
+      text-align: center;
     }
+  }
 
-    .menu {
-      order: 3;
+  @media (min-width: 450px) {
+    .site-footer {
+      .footer-content-container {
+        .footer-content {
+          grid-template-rows: repeat(2, auto);
+          grid-template-areas: "brand sdgs" "nav contacts";
+
+          .un-sdgs {
+            align-self: self-start;
+          }
+        }
+      }
     }
   }
 
   @media (min-width: 760px) {
-    .site-header {
-      padding-inline: 3rem;
+    .site-footer {
+      .footer-content-container {
+        .footer-content {
+          grid-template-columns: auto auto auto auto;
+          grid-template-rows: auto;
+          grid-template-areas: "brand sdgs nav contacts";
+        }
+      }
     }
   }
 
   @media (min-width: 1024px) {
     .site-header {
-      gap: 2rem;
+      .header-content {
+        gap: 2rem;
 
-      .brand {
-        order: 2;
+        .brand {
+          order: 2;
+        }
+
+        .design-line-wrapper {
+          order: 1;
+        }
+
+        .menu {
+          order: 3;
+          flex: 1;
+        }
       }
+    }
 
-      .design-line-wrapper {
-        order: 1;
-      }
-
-      .menu {
-        order: 3;
-        flex: 1;
+    .site-footer {
+      .footer-content-container {
+        .footer-content {
+          max-width: var(--w-page-max);
+          margin-inline: auto;
+          justify-content: space-between;
+        }
       }
     }
   }
 
   @media (min-width: 1200px) {
     .site-header {
-      gap: 5rem;
+      .header-content {
+        gap: 5rem;
+      }
     }
   }
 }
