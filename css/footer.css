@@ -36,10 +36,6 @@
   padding-inline: 1rem;
 }
 
-.site-footer .un-sdgs img {
-  width: 100%;
-}
-
 .site-footer .nav {
   grid-area: nav;
   display: flex;

@@ -14,16 +14,19 @@
   --logo-lg: 10rem;
 
   --c-black: #000000;
-  --c-black-transparent: #00000020;
+  --c-black-10: #00000010;
+  --c-black-20: #00000020;
   --c-white: #ffffff;
   --c-blue: #1e3a8a;
+  --c-blue-dim: #0b2264;
   --c-gold: #fbbf24;
+  --c-gold-dim: #e5ae1f;
 
   --c-text: var(--c-black);
   --c-background: var(--c-white);
   --c-primary: var(--c-blue);
   --c-accent: var(--c-gold);
-  --c-border: var(--c-black-transparent);
+  --c-border: var(--c-black-20);
 
   --c-footer-background: var(--c-primary);
   --c-footer-text: var(--c-background);
@@ -36,6 +39,7 @@
   padding: 0;
   vertical-align: middle;
   box-sizing: border-box;
+  /* outline: 1px solid rgba(243, 35, 35, 0.581); */
 }
 
 ul {
@@ -44,10 +48,13 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 html {
   scroll-behavior: smooth;
+  font-size: 14px;
 }
 
 body {
@@ -94,4 +101,109 @@ footer a {
   white-space: nowrap;
   border: 0;
   outline: 0;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  width: fit-content;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 0.5rem;
+}
+
+.cta-button {
+  color: var(--c-text);
+  background-color: var(--c-accent);
+  font-weight: var(--fw-semibold);
+}
+
+.cta-button:hover {
+  text-decoration: none;
+  background-color: var(--c-gold-dim);
+}
+
+.cta-button:active {
+  color: var(--c-background);
+  background-color: var(--c-text);
+}
+
+.secondary-button {
+  background-color: var(--c-primary);
+  color: var(--c-background);
+  font-weight: var(--fw-semibold);
+}
+
+.secondary-button:hover {
+  text-decoration: none;
+  background-color: var(--c-blue-dim);
+}
+
+.secondary-button:active {
+  background-color: var(--c-text);
+}
+
+button:focus-visible,
+.cta-button:focus-visible,
+.secondary-button:focus-visible {
+  outline: 3px solid var(--c-accent);
+  outline-offset: 3px;
+}
+
+main {
+  max-width: var(--w-page-max);
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  padding-block: 4rem;
+  padding-inline: 1rem;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: column;
+  column-gap: 2rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: var(--fw-black);
+}
+
+.page-subtitle {
+  font-size: 1.5rem;
+  font-weight: var(--fw-semibold);
+}
+
+@media (min-width: 450px) {
+  main {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 760px) {
+  main {
+    gap: 6rem;
+    padding-block: 6rem;
+    padding-inline: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+
+  main {
+    gap: 8rem;
+    padding-block: 8rem;
+  }
+
+  .page-section {
+    column-gap: 3.5rem;
+  }
 }

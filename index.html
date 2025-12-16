@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
     <link rel="stylesheet" href="./css/footer.css" />
 
     <!-- Scripts -->
@@ -25,6 +26,7 @@
   </head>
 
   <body>
+    <!-- SITE HEADER -->
     <header class="site-header">
       <div class="header-content">
         <a href="./index.html" class="brand" aria-label="EthicaData homepage">
@@ -75,8 +77,161 @@
       </div>
     </header>
 
-    <main class="main-content"></main>
+    <!-- SITE MAIN CONTENT -->
+    <main class="main-content">
+      <!-- SECTION: Hero -->
+      <section id="hero" class="hero" aria-labelledby="hero-title">
+        <!-- Image is decorative, hence, alt tag is intentionally empty -->
+        <img
+          class="hero-image"
+          src="./images/home/hero.png"
+          alt=""
+          aria-hidden="true"
+        />
 
+        <div class="hero-content">
+          <h1 id="hero-title" class="page-title">EthicaData</h1>
+          <p class="page-subtitle">
+            Responsible intelligence for a fairer world
+          </p>
+
+          <p>
+            Data is everywhere, powering healthcare, transport, finance, and
+            daily life. But behind every algorithm sits a question: is this
+            fair, transparent, and safe?
+          </p>
+          <p>
+            EthicaData helps people and organisations understand how to use data
+            responsibly. We turn ethical theory into practical habits that
+            protect people and strengthen trust.
+          </p>
+
+          <a class="button cta-button" href="./contact.html">
+            Contact us now for a free assessment
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- SECTION: What We Stand For -->
+      <section class="values" aria-labelledby="values-title">
+        <h2 id="values-title">What We Stand For</h2>
+        <dl class="values-grid">
+          <div class="value-card">
+            <dt>
+              <!-- These icons are decorative, hence, hidden from screen
+               readers, and thus, alt tags are intentionally left empty -->
+              <img src="./images/home/fairness.svg" alt="" />
+              Fairness
+            </dt>
+            <dd>
+              Algorithms should benefit everyone equally, not reinforce bias.
+            </dd>
+          </div>
+          <div class="value-card">
+            <dt>
+              <img src="./images/home/transparency.svg" alt="" />
+              Transparency
+            </dt>
+            <dd>
+              Users have the right to know when and how their data is analysed.
+            </dd>
+          </div>
+          <div class="value-card">
+            <dt>
+              <img src="./images/home/consent.svg" alt="" />
+              Consent
+            </dt>
+            <dd>
+              Data collection should always have a clear reason and permission.
+            </dd>
+          </div>
+          <div class="value-card">
+            <dt>
+              <img src="./images/home/accountability.svg" alt="" />
+              Accountability
+            </dt>
+            <dd>Organisations must take responsibility for their models.</dd>
+          </div>
+          <div class="value-card">
+            <dt>
+              <img src="./images/home/security.svg" alt="" />
+              Security
+            </dt>
+            <dd>Protecting data is protecting people.</dd>
+          </div>
+        </dl>
+        <a href="./principles.html" class="button secondary-button">
+          Explore the principles
+          <span aria-hidden="true">→</span>
+        </a>
+      </section>
+
+      <!-- SECTION - UN Sustainability Development Goals We Support -->
+      <section class="sdgs">
+        <h2 id="sdgs-title">UN Sustainability Development Goals We Support</h2>
+        <ul class="sdgs-grid">
+          <li>
+            <a
+              href="https://sdgs.un.org/goals/goal16"
+              class="sdg-card"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/home/sdg16.svg"
+                alt="UN SDG 16: Peace, Justice and Strong Institutions (opens in new tab)"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://sdgs.un.org/goals/goal10"
+              class="sdg-card"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/home/sdg10.svg"
+                alt="UN SDG 10: Reduced Inequalities (opens in new tab)"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://sdgs.un.org/goals/goal9"
+              class="sdg-card"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/home/sdg9.svg"
+                alt="UN SDG 9: Industry, Innovation and Infrastructure (opens in new tab)"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://sdgs.un.org/goals/goal3"
+              class="sdg-card"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/home/sdg3.svg"
+                alt="UN SDG 3: Good Health and Well-Being (opens in new tab)"
+              />
+            </a>
+          </li>
+        </ul>
+        <a href="./practice.html" class="button secondary-button">
+          See these goals applied in practice
+          <span aria-hidden="true">→</span>
+        </a>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER -->
     <footer class="site-footer">
       <!-- Main footer content -->
       <div class="footer-content-container">
