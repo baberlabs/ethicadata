@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Practice | EthicaData</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/common/logo_dark.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles (in the order of @layers) -->
+
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/practice.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <!-- Scripts -->
+    <script src="./js/menu.js" defer></script>
+  </head>
+
+  <body>
+    <!-- SITE HEADER -->
+    <header class="site-header">
+      <div class="header-content">
+        <a href="./index.html" class="brand" aria-label="EthicaData homepage">
+          <img
+            class="logo"
+            src="./images/common/logo_dark.svg"
+            alt="EthicaData logo"
+          />
+        </a>
+
+        <div class="design-line-wrapper" aria-hidden="true">
+          <!-- Alt is intentionally empty for this image as per W3 guidelines -->
+          <img
+            class="design-line"
+            src="./images/common/design-line.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="menu">
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Toggle navigation"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+
+          <nav
+            id="primary-nav"
+            class="nav"
+            aria-label="Primary navigation"
+            hidden
+          >
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./principles.html">Principles</a></li>
+              <li>
+                <a href="./practice.html" aria-current="page">Practice</a>
+              </li>
+              <li><a href="./references.html">References</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- SITE MAIN CONTENT -->
+    <main class="main-content">
+      <!-- SECTION: Practice -->
+      <section class="page-section practice" aria-labelledby="practice-title">
+        <header class="practice-header">
+          <h1 class="page-title" id="practice-title">Practice</h1>
+          <p class="page-subtitle" id="practice-description">
+            See how major industries use data mining ethically
+          </p>
+          <p>
+            Data mining becomes ethical when organisations balance insight with
+            responsibility. These real examples show how different industries
+            apply principles of fairness, privacy, and accountability in their
+            everyday data work.
+          </p>
+        </header>
+
+        <div class="table-wrapper">
+          <p class="table-hint">
+            Swipe horizontally to view the full table
+            <span aria-hidden="true">→</span>
+          </p>
+          <table aria-describedby="practice-description">
+            <caption class="sr-only">
+              Examples of ethical data mining practices across major industries
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Sector</th>
+                <th scope="col">Example</th>
+                <th scope="col">Ethical Controls in Place</th>
+                <th scope="col">Linked SDGs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="practice-row-1">
+                <th scope="row">Healthcare</th>
+                <td>
+                  <strong>NHS OpenSafely:</strong> a secure research platform
+                  analysing anonymised GP data to study health trends and
+                  improve treatment.
+                </td>
+                <td>
+                  Data anonymisation, patient consent, strict access controls,
+                  and transparency reports.
+                </td>
+                <td>
+                  <strong>SDG 3</strong> (Good Health & Well-Being);
+                  <strong>SDG 16</strong> (Strong Institutions)
+                </td>
+              </tr>
+              <tr id="practice-row-2">
+                <th scope="row">Retail</th>
+                <td>
+                  <strong>Tesco Clubcard Analytics:</strong> customer purchase
+                  data used to forecast demand and reduce food waste.
+                </td>
+                <td>
+                  Data minimisation, informed consent, ethical analytics, and
+                  sustainable reporting.
+                </td>
+                <td>
+                  <strong>SDG 12</strong> (Responsible Consumption);
+                  <strong>SDG 9</strong> (Industry & Infrastructure)
+                </td>
+              </tr>
+              <tr id="practice-row-3">
+                <th scope="row">Finance</th>
+                <td>
+                  <strong>Monzo Bank Fraud Detection:</strong> machine learning
+                  models spotting unusual transactions while protecting user
+                  privacy.
+                </td>
+                <td>
+                  Bias testing, regular audits, fairness monitoring, and clear
+                  customer expectations.
+                </td>
+                <td>
+                  <strong>SDG 10</strong> (Reduced Inequalities);
+                  <strong>SDG 16</strong> (Peace & Justice)
+                </td>
+              </tr>
+              <tr id="practice-row-4">
+                <th scope="row">Transport</th>
+                <td>
+                  <strong>Transport for London Open Data:</strong> anonymised
+                  travel data shared with developers to improve journey planning
+                  and reduce congestion.
+                </td>
+                <td>
+                  Aggregation, public benefit focus, open-source collaboration,
+                  and privacy preservation.
+                </td>
+                <td>
+                  <strong>SDG 11</strong> (Sustainable Cities);
+                  <strong>SDG 9</strong> (Innovation & Infrastructure)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <a class="button cta-button" href="./contact.html">
+          Contact us for more information
+          <span aria-hidden="true">→</span>
+        </a>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <!-- Main footer content -->
+      <div class="footer-content-container">
+        <div class="footer-content">
+          <!-- Logo -->
+          <a href="./index.html" class="brand" aria-label="EthicaData homepage">
+            <img
+              class="logo"
+              src="./images/common/logo_light.svg"
+              alt="EthicaData logo"
+            />
+          </a>
+
+          <!-- UN SDGs -->
+          <figure class="un-sdgs">
+            <figcaption class="sr-only">
+              United Nations Sustainable Development Goals supported
+            </figcaption>
+            <img
+              src="./images/home/sdg16.svg"
+              alt="SDG 16 - Peace, Justice and Strong Institutions"
+            />
+            <img
+              src="./images/home/sdg10.svg"
+              alt="SDG 10 - Reduced Inequalities"
+            />
+            <img
+              src="./images/home/sdg9.svg"
+              alt="SDG 9 - Industry, Innovation and Infrastructure"
+            />
+            <img
+              src="./images/home/sdg3.svg"
+              alt="SDG 3 - Good Health and Well-Being"
+            />
+          </figure>
+
+          <!-- Footer Navigation -->
+          <nav id="footer-nav" class="nav" aria-label="Footer navigation">
+            <h2 class="nav-heading">Explore</h2>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./principles.html">Principles</a></li>
+              <li>
+                <a href="./practice.html" aria-current="page">Practice</a>
+              </li>
+              <li><a href="./references.html">References</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contact Details -->
+          <section class="contact-details" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <address>
+              <span>Millennium Point</span><br />
+              <span>Birmingham City University</span><br />
+              <span>Curzon Street</span><br />
+              <span>Birmingham B4 7AP</span><br />
+            </address>
+            <div>
+              <a href="tel:+447438234827">(+44) 7438 234 827</a>
+              <a href="mailto:baber.khan@mail.bcu.ac.uk">
+                baber.khan@mail.bcu.ac.uk
+              </a>
+              <p class="student-id">Student ID No. 17125325</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <p class="copyright">
+        Copyright &copy; 2025, EthicaData. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
