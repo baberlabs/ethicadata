@@ -1,51 +1,97 @@
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+:root {
+  --w-page-max: 1440px;
 
-  body {
-    font-family: var(--f-text);
-    font-weight: var(--fw-normal);
-    color: var(--c-text);
-    background-color: var(--c-background);
-  }
+  --f-heading: "Poppins", "Inter", Arial, Helvetica, system-ui, sans-serif;
+  --f-text: "Inter", Arial, Helvetica, system-ui, sans-serif;
 
-  h1,
-  h2,
-  h3 {
-    font-family: var(--f-heading);
-  }
+  --fw-normal: 300;
+  --fw-semibold: 600;
+  --fw-black: 900;
 
-  h1 {
-    color: var(--c-primary);
-  }
+  --fs-footer: 0.8rem;
 
-  a {
-    color: inherit;
-    text-decoration: none;
-    font-family: inherit;
-  }
+  --logo-sm: 6rem;
+  --logo-lg: 10rem;
 
-  a:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.15rem;
-    text-decoration-thickness: 0.15rem;
-  }
+  --c-black: #111111;
+  --c-black-transparent: #00000020;
+  --c-white: #eeeeee;
+  --c-blue: #1e3a8a;
+  --c-gold: #fbbf24;
 
-  footer a {
-    text-decoration: underline;
-  }
+  --c-text: var(--c-black);
+  --c-background: var(--c-white);
+  --c-primary: var(--c-blue);
+  --c-accent: var(--c-gold);
+  --c-border: var(--c-black-transparent);
 
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-    outline: 0;
-  }
+  --c-footer-background: var(--c-primary);
+  --c-footer-text: var(--c-background);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--f-text);
+  font-weight: var(--fw-normal);
+  color: var(--c-text);
+  background-color: var(--c-background);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--f-heading);
+}
+
+h1 {
+  color: var(--c-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.15rem;
+  text-decoration-thickness: 0.15rem;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  outline: 0;
 }
