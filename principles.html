@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Principles | EthicaData</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/common/logo_dark.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles (in the order of @layers) -->
+
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/principles.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <!-- Scripts -->
+    <script src="./js/menu.js" defer></script>
+    <script src="./js/search.js" defer></script>
+  </head>
+
+  <body>
+    <!-- SITE HEADER -->
+    <header class="site-header">
+      <div class="header-content">
+        <a href="./index.html" class="brand" aria-label="EthicaData homepage">
+          <img
+            class="logo"
+            src="./images/common/logo_dark.svg"
+            alt="EthicaData logo"
+          />
+        </a>
+
+        <div class="design-line-wrapper" aria-hidden="true">
+          <!-- Alt is intentionally empty for this image as per W3 guidelines -->
+          <img
+            class="design-line"
+            src="./images/common/design-line.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="menu">
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Toggle navigation"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+
+          <nav
+            id="primary-nav"
+            class="nav"
+            aria-label="Primary navigation"
+            hidden
+          >
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li>
+                <a href="./principles.html" aria-current="page">Principles</a>
+              </li>
+              <li><a href="./practice.html">Practice</a></li>
+              <li><a href="./references.html">References</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- SITE MAIN CONTENT -->
+    <main class="main-content">
+      <!-- SECTION: Principles -->
+      <section
+        class="page-section principles"
+        aria-labelledby="principles-title"
+      >
+        <header class="principles-header">
+          <h1 class="page-title" id="principles-title">Principles</h1>
+          <p class="page-subtitle">Doing the right thing with data</p>
+          <p>
+            Ethical data is not about slowing innovation. It is about designing
+            technology that people can trust. Each principle below connects
+            everyday data practice to one or more UN Sustainable Development
+            Goals (SDGs).
+          </p>
+        </header>
+        <form class="search-form">
+          <label for="search" class="sr-only">
+            Search for a principle by SDG
+          </label>
+          <input
+            id="search"
+            type="text"
+            placeholder="Search principles by SDG..."
+          />
+          <button type="button" aria-label="Search">
+            <!-- Image `alt` intentionally left empty because aria-label
+             has been provided to the parent button element -->
+            <img src="./images/principles/magnifier-glass.svg" alt="" />
+          </button>
+        </form>
+        <dl class="principles-grid">
+          <div class="principle-card">
+            <dt>
+              <span class="principle-serial">1</span>
+              <span class="principle-title">
+                Contribute to society and human well-being
+              </span>
+            </dt>
+            <dd>
+              <p>
+                Data projects should serve the public good, not only business
+                goals. Mining techniques must improve lives, respect human
+                rights, and avoid reinforcing disadvantage.
+              </p>
+              <div class="sdg-labels">
+                <span>SDG 3</span><span>SDG 10</span><span>SDG 16</span>
+              </div>
+            </dd>
+          </div>
+
+          <div class="principle-card">
+            <dt>
+              <span class="principle-serial">2</span>
+              <span class="principle-title">Avoid harm</span>
+            </dt>
+            <dd>
+              <p>
+                Before collecting or analysing data, assess possible harms,
+                especially privacy loss, bias, or reputational damage, and
+                design safeguards to prevent them.
+              </p>
+              <div class="sdg-labels">
+                <span>SDG 3</span><span>SDG 16</span>
+              </div>
+            </dd>
+          </div>
+
+          <div class="principle-card">
+            <dt>
+              <span class="principle-serial">3</span>
+              <span class="principle-title">Be honest and trustworthy</span>
+            </dt>
+            <dd>
+              <p>
+                Be transparent about data sources, model limits, and potential
+                errors. Never falsify, exaggerate, or conceal results.
+              </p>
+              <div class="sdg-labels">
+                <span>SDG 6</span>
+              </div>
+            </dd>
+          </div>
+
+          <div class="principle-card">
+            <dt>
+              <span class="principle-serial">4</span>
+              <span class="principle-title"
+                >Be fair and do not discriminate</span
+              >
+            </dt>
+            <dd>
+              <p>
+                Detect and correct bias in datasets and algorithms. Ensure
+                models work fairly across age, gender, race, and background.
+              </p>
+              <div class="sdg-labels">
+                <span>SDG 10</span>
+              </div>
+            </dd>
+          </div>
+
+          <div class="principle-card">
+            <dt>
+              <span class="principle-serial">5</span>
+              <span class="principle-title">
+                Respect creative work and intellectual property
+              </span>
+            </dt>
+            <dd>
+              <p>
+                When re-using datasets, algorithms, or research, credit the
+                creators and follow licenses.
+              </p>
+              <div class="sdg-labels">
+                <span>SDG 9</span>
+              </div>
+            </dd>
+          </div>
+
+          <div class="principle-card">
+            <dt>
+              <span class="principle-serial">6</span>
+              <span class="principle-title">Respect privacy</span>
+            </dt>
+            <dd>
+              <p>
+                Collect only the minimum data needed, store it securely, and
+                explain how it will be used. Allow people to view, correct, or
+                delete their information.
+              </p>
+              <div class="sdg-labels">
+                <span>SDG 3</span><span>SDG 16</span>
+              </div>
+            </dd>
+          </div>
+
+          <div class="principle-card">
+            <dt>
+              <span class="principle-serial">7</span>
+              <span class="principle-title">Honour confidentiality</span>
+            </dt>
+            <dd>
+              <p>
+                If you hold sensitive or propriety data, protect it unless
+                disclosure is legally or ethically required to prevent harm.
+              </p>
+              <div class="sdg-labels">
+                <span>SDG 16</span>
+              </div>
+            </dd>
+          </div>
+
+          <div class="principle-card">
+            <dt>
+              <span class="principle-serial">8</span>
+              <span class="principle-title"
+                >Evaluate systems for quality and risk</span
+              >
+            </dt>
+            <dd>
+              <p>
+                Audit data-mining systems for accuracy, reliability, and
+                unintended side-effects. Report major risks and correct them
+                promptly.
+              </p>
+              <div class="sdg-labels">
+                <span>SDG 9</span>
+              </div>
+            </dd>
+          </div>
+
+          <div class="principle-card">
+            <dt>
+              <span class="principle-serial">9</span>
+              <span class="principle-title"
+                >Design for security and robustness</span
+              >
+            </dt>
+            <dd>
+              <p>
+                Strong security is part of ethics. Protect data against misuse
+                and update defences as threats evolve.
+              </p>
+              <div class="sdg-labels">
+                <span>SDG 9</span>
+              </div>
+            </dd>
+          </div>
+        </dl>
+
+        <p>
+          Ethical data mining follows one simple rule:
+          <strong>the public good comes first</strong>. By following these
+          principles, we connect technology with trust, responsibility, and the
+          UN goals for a fair and sustainable digital future.
+        </p>
+
+        <a class="button cta-button" href="./contact.html">
+          Contact us now for a free assessment
+          <span aria-hidden="true">→</span>
+        </a>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <!-- Main footer content -->
+      <div class="footer-content-container">
+        <div class="footer-content">
+          <!-- Logo -->
+          <a href="./index.html" class="brand" aria-label="EthicaData homepage">
+            <img
+              class="logo"
+              src="./images/common/logo_light.svg"
+              alt="EthicaData logo"
+            />
+          </a>
+
+          <!-- UN SDGs -->
+          <figure class="un-sdgs">
+            <figcaption class="sr-only">
+              United Nations Sustainable Development Goals supported
+            </figcaption>
+            <img
+              src="./images/home/sdg16.svg"
+              alt="SDG 16 - Peace, Justice and Strong Institutions"
+            />
+            <img
+              src="./images/home/sdg10.svg"
+              alt="SDG 10 - Reduced Inequalities"
+            />
+            <img
+              src="./images/home/sdg9.svg"
+              alt="SDG 9 - Industry, Innovation and Infrastructure"
+            />
+            <img
+              src="./images/home/sdg3.svg"
+              alt="SDG 3 - Good Health and Well-Being"
+            />
+          </figure>
+
+          <!-- Footer Navigation -->
+          <nav id="footer-nav" class="nav" aria-label="Footer navigation">
+            <h2 class="nav-heading">Explore</h2>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li>
+                <a href="./principles.html" aria-current="page">Principles</a>
+              </li>
+              <li><a href="./practice.html">Practice</a></li>
+              <li><a href="./references.html">References</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contact Details -->
+          <section class="contact-details" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <address>
+              <span>Millennium Point</span><br />
+              <span>Birmingham City University</span><br />
+              <span>Curzon Street</span><br />
+              <span>Birmingham B4 7AP</span><br />
+            </address>
+            <div>
+              <a href="tel:+447438234827">(+44) 7438 234 827</a>
+              <a href="mailto:baber.khan@mail.bcu.ac.uk">
+                baber.khan@mail.bcu.ac.uk
+              </a>
+              <p class="student-id">Student ID No. 17125325</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <p class="copyright">
+        Copyright &copy; 2025, EthicaData. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

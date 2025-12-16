@@ -3,6 +3,7 @@
   top: 0;
   background-color: var(--c-background);
   border-bottom: 1px solid var(--c-border);
+  z-index: 999;
 }
 
 .site-header .header-content {

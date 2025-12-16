@@ -1,5 +1,6 @@
 :root {
   --w-page-max: 1440px;
+  --w-text-max: 660px;
 
   --f-heading: "Poppins", "Inter", Arial, Helvetica, system-ui, sans-serif;
   --f-text: "Inter", Arial, Helvetica, system-ui, sans-serif;
@@ -13,11 +14,12 @@
   --logo-sm: 6rem;
   --logo-lg: 10rem;
 
-  --c-black: #000000;
-  --c-black-10: #00000010;
-  --c-black-20: #00000020;
+  --c-black: #1f2937; /* charcoal */
+  --c-black-10: #1f293710;
+  --c-black-20: #1f293720;
   --c-white: #ffffff;
   --c-blue: #1e3a8a;
+  --c-blue-30: #1e3a8a30;
   --c-blue-dim: #0b2264;
   --c-gold: #fbbf24;
   --c-gold-dim: #e5ae1f;
@@ -68,16 +70,22 @@ h1,
 h2,
 h3 {
   font-family: var(--f-heading);
+  max-width: var(--w-text-max);
 }
 
 h1 {
   color: var(--c-primary);
 }
 
+p {
+  max-width: var(--w-text-max);
+}
+
 a {
   color: inherit;
   text-decoration: none;
   font-family: inherit;
+  max-width: var(--w-text-max);
 }
 
 a:hover {
@@ -88,6 +96,10 @@ a:hover {
 
 footer a {
   text-decoration: underline;
+}
+
+strong {
+  font-weight: var(--fw-semibold);
 }
 
 .sr-only {
@@ -166,7 +178,7 @@ main {
 .page-section {
   display: flex;
   flex-direction: column;
-  column-gap: 2rem;
+  row-gap: 2rem;
 }
 
 .page-title {
@@ -204,6 +216,6 @@ main {
   }
 
   .page-section {
-    column-gap: 3.5rem;
+    row-gap: 3rem;
   }
 }

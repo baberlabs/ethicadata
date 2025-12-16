@@ -1,0 +1,114 @@
+.principles .principles-header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.principles .search-form {
+  position: relative;
+  max-width: 40rem;
+}
+
+.principles .search-form input {
+  width: 100%;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  border-radius: 5rem;
+  border: 1px solid var(--c-text);
+}
+
+.principles .search-form input::placeholder {
+  color: var(--c-text);
+  font-style: italic;
+  font-size: 1rem;
+  opacity: 1;
+}
+
+.principles .search-form button {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.principles .principles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+}
+
+.principles .principle-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  background-color: var(--c-black-10);
+  border-radius: 0.5rem;
+}
+
+.principles .principle-card dt {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.principles .principle-serial {
+  font-size: 1.5rem;
+  font-weight: var(--fw-black);
+}
+
+.principles .principle-title {
+  font-weight: var(--fw-semibold);
+}
+
+.principles .principle-card dd {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.principles .sdg-labels {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.principles .sdg-labels span {
+  padding-block: 0.5rem;
+  padding-inline: 0.5rem;
+  background-color: var(--c-blue-30);
+  border-radius: 0.25rem;
+  font-weight: var(--fw-semibold);
+  font-size: 0.8rem;
+}
+
+.principles .sdg-labels span:hover {
+  background-color: var(--c-gold);
+  cursor: default;
+}
+
+@media (min-width: 760px) {
+  .principles .principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .principles .principles-grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .principles .principles-grid {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+  }
+}

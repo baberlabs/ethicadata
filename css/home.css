@@ -8,6 +8,7 @@
 
 .hero .hero-image {
   max-width: 35rem;
+  height: 100%;
 }
 
 .hero .hero-content {
