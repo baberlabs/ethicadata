@@ -13,9 +13,9 @@
   --logo-sm: 6rem;
   --logo-lg: 10rem;
 
-  --c-black: #111111;
+  --c-black: #000000;
   --c-black-transparent: #00000020;
-  --c-white: #eeeeee;
+  --c-white: #ffffff;
   --c-blue: #1e3a8a;
   --c-gold: #fbbf24;
 
@@ -90,7 +90,7 @@ footer a {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
   outline: 0;
