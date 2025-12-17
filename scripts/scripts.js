@@ -1,7 +1,20 @@
-const form = document.querySelector(".principles .search-form");
+const nav = document.querySelector("#primary-nav");
+const menuButton = document.querySelector(".menu-button");
+const searchForm = document.querySelector(".principles .search-form");
 
-form.addEventListener("submit", (e) => e.preventDefault());
+// Toggle menu
+menuButton.addEventListener("click", () => {
+  const isOpen = menuButton.classList.toggle("menu-open");
+  menuButton.setAttribute("aria-expanded", isOpen);
+  nav.toggleAttribute("hidden", !isOpen);
+});
 
+// Remove default behaviour from search form
+if (searchForm) {
+    searchForm.addEventListener("submit", (e) => e.preventDefault());
+}
+
+// Make principles searchable by SDGs or principle title
 document.addEventListener("DOMContentLoaded", () => {
   const section = document.querySelector(".principles");
 
