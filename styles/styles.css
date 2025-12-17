@@ -16,10 +16,10 @@
   --logo-sm: 6rem;
   --logo-lg: 10rem;
 
-  --c-black: #1f2937; /* charcoal */
-  --c-black-10: #1f293710;
-  --c-black-20: #1f293720;
-  --c-black-50: #1f293750;
+  --c-charcoal: #1f2937; 
+  --c-charcoal-10: #1f293710;
+  --c-charcoal-20: #1f293720;
+  --c-charcoal-50: #1f293750;
   --c-white: #ffffff;
   --c-blue: #1e3a8a;
   --c-blue-30: #1e3a8a30;
@@ -27,12 +27,11 @@
   --c-gold: #fbbf24;
   --c-gold-dim: #e5ae1f;
 
-  --c-text: var(--c-black);
+  --c-text: var(--c-charcoal);
   --c-background: var(--c-white);
   --c-primary: var(--c-blue);
   --c-accent: var(--c-gold);
-  --c-border: var(--c-black-20);
-  --c-background-rgb: 255, 255, 255;
+  --c-border: var(--c-charcoal-20);
 
   --c-footer-background: var(--c-primary);
   --c-footer-text: var(--c-background);
@@ -47,7 +46,6 @@
   padding: 0;
   vertical-align: middle;
   box-sizing: border-box;
-  /* outline: 1px solid rgba(243, 35, 35, 0.581); */
 }
 
 ul {
@@ -114,8 +112,8 @@ strong {
   position: absolute;
   top: -100%;
   left: 0;
-  background: var(--charcoal);
-  color: var(--white);
+  background: var(--c-text);
+  color: var(--c-background);
   padding: 0.5rem 1rem;
   z-index: 1000;
 }
@@ -635,7 +633,7 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  background-color: var(--c-black-10);
+  background-color: var(--c-charcoal-10);
   padding-block: 1rem;
   padding-inline: 1rem;
   border-radius: 0.5rem;
@@ -685,7 +683,7 @@ main {
 }
 
 .sdgs .sdg-card img:hover {
-  box-shadow: 0 0.3rem 0.5rem black;
+  box-shadow: 0 0.3rem 0.5rem var(--c-text);
 }
 
 @media (min-width: 760px) {
@@ -751,7 +749,7 @@ main {
   row-gap: 1rem;
   padding-block: 1rem;
   padding-inline: 1rem;
-  background-color: var(--c-black-10);
+  background-color: var(--c-charcoal-10);
   border-radius: 0.5rem;
 }
 
@@ -842,11 +840,11 @@ main {
 .practice table {
   min-width: 1000px;
   border-collapse: collapse;
-  border: 1px solid var(--c-black-50);
+  border: 1px solid var(--c-charcoal-50);
 }
 
 .practice table tr {
-  border: 1px solid var(--c-black-50);
+  border: 1px solid var(--c-charcoal-50);
 }
 
 .practice table thead tr th {
@@ -911,7 +909,7 @@ main {
 
 .references .references-list li:not(:last-child) {
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--c-black-20);
+  border-bottom: 1px solid var(--c-charcoal-20);
 }
 
 /* CONTACT PAGE */
