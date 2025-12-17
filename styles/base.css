@@ -104,6 +104,20 @@ strong {
   font-weight: var(--fw-semibold);
 }
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--charcoal);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
