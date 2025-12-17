@@ -644,6 +644,9 @@ main {
 .values .value-card dt {
   font-size: 1rem;
   font-weight: var(--fw-semibold);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
 .values .value-card img {
