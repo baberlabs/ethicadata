@@ -1,0 +1,32 @@
+.thank-you .thank-you-header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.thank-you .thank-you-notice {
+  font-size: 0.8rem;
+  background-color: var(--c-blue-30);
+  padding-block: 1rem;
+  padding-inline: 1.5rem;
+  position: relative;
+  width: fit-content;
+}
+
+.thank-you .thank-you-notice::before,
+.thank-you .thank-you-notice::after {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 100%;
+  top: 0;
+  background-color: var(--c-accent);
+}
+
+.thank-you .thank-you-notice::before {
+  left: 0;
+}
+
+.thank-you .thank-you-notice::after {
+  right: 0;
+}

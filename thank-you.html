@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Thank You | EthicaData</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/common/logo_dark.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles (in the order of @layers) -->
+
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/thank-you.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <!-- Scripts -->
+    <script src="./js/menu.js" defer></script>
+  </head>
+
+  <body>
+    <!-- SITE HEADER -->
+    <header class="site-header">
+      <div class="header-content">
+        <a href="./index.html" class="brand" aria-label="EthicaData homepage">
+          <img
+            class="logo"
+            src="./images/common/logo_dark.svg"
+            alt="EthicaData logo"
+          />
+        </a>
+
+        <div class="design-line-wrapper" aria-hidden="true">
+          <!-- Alt is intentionally empty for this image as per W3 guidelines -->
+          <img
+            class="design-line"
+            src="./images/common/design-line.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="menu">
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Toggle navigation"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+
+          <nav
+            id="primary-nav"
+            class="nav"
+            aria-label="Primary navigation"
+            hidden
+          >
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./principles.html">Principles</a></li>
+              <li><a href="./practice.html">Practice</a></li>
+              <li><a href="./references.html">References</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- SITE MAIN CONTENT -->
+    <main class="main-content">
+      <!-- SECTION: Contact -->
+      <section class="page-section thank-you" aria-labelledby="thank-you-title">
+        <header class="thank-you-header">
+          <h1 class="page-title" id="thank-you-title">Thank You</h1>
+          <p class="page-subtitle">
+            Your message has been received successfully.
+          </p>
+          <p>
+            We review all enquiries carefully and will respond as soon as
+            possible, usually within one to two working days.
+          </p>
+          <p>
+            EthicaData values thoughtful dialogue around responsible technology,
+            data practice, and ethical decision-making. We appreciate you taking
+            the time to reach out.
+          </p>
+          <p class="thank-you-notice">
+            Your information is handled securely and used only to respond to
+            your enquiry.
+          </p>
+          <a href="./contact.html" class="button cta-button">
+            <span aria-hidden="true">←</span>
+            Go back to contact page
+          </a>
+        </header>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <!-- Main footer content -->
+      <div class="footer-content-container">
+        <div class="footer-content">
+          <!-- Logo -->
+          <a href="./index.html" class="brand" aria-label="EthicaData homepage">
+            <img
+              class="logo"
+              src="./images/common/logo_light.svg"
+              alt="EthicaData logo"
+            />
+          </a>
+
+          <!-- UN SDGs -->
+          <figure class="un-sdgs">
+            <figcaption class="sr-only">
+              United Nations Sustainable Development Goals supported
+            </figcaption>
+            <img
+              src="./images/home/sdg16.svg"
+              alt="SDG 16 - Peace, Justice and Strong Institutions"
+            />
+            <img
+              src="./images/home/sdg10.svg"
+              alt="SDG 10 - Reduced Inequalities"
+            />
+            <img
+              src="./images/home/sdg9.svg"
+              alt="SDG 9 - Industry, Innovation and Infrastructure"
+            />
+            <img
+              src="./images/home/sdg3.svg"
+              alt="SDG 3 - Good Health and Well-Being"
+            />
+          </figure>
+
+          <!-- Footer Navigation -->
+          <nav id="footer-nav" class="nav" aria-label="Footer navigation">
+            <h2 class="nav-heading">Explore</h2>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./principles.html">Principles</a></li>
+              <li><a href="./practice.html">Practice</a></li>
+              <li><a href="./references.html">References</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Contact Details -->
+          <section class="contact-details" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <address>
+              <span>Millennium Point</span><br />
+              <span>Birmingham City University</span><br />
+              <span>Curzon Street</span><br />
+              <span>Birmingham B4 7AP</span><br />
+            </address>
+            <div>
+              <a href="tel:+447438234827">(+44) 7438 234 827</a>
+              <a href="mailto:baber.khan@mail.bcu.ac.uk">
+                baber.khan@mail.bcu.ac.uk
+              </a>
+              <p class="student-id">Student ID No. 17125325</p>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <p class="copyright">
+        Copyright &copy; 2025, EthicaData. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
