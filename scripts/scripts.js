@@ -1,6 +1,7 @@
 const nav = document.querySelector("#primary-nav");
 const menuButton = document.querySelector(".menu-button");
 const searchForm = document.querySelector(".principles .search-form");
+const contactForm = document.querySelector(".contact .contact-form");
 
 // Toggle menu
 menuButton.addEventListener("click", () => {
@@ -11,7 +12,7 @@ menuButton.addEventListener("click", () => {
 
 // Remove default behaviour from search form
 if (searchForm) {
-    searchForm.addEventListener("submit", (e) => e.preventDefault());
+  searchForm.addEventListener("submit", (e) => e.preventDefault());
 }
 
 // Make principles searchable by SDGs or principle title
@@ -66,4 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   searchInput.addEventListener("input", filterCards);
   searchButton.addEventListener("click", filterCards);
+});
+
+// Prevent submit and redirect manually for contact form
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  window.location.href = "./thank-you.html";
 });
